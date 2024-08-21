@@ -1,26 +1,24 @@
-name: ci
-
+name: Playwright run tests
 on:
   push:
-    branches: [ main ]
-  pull_request:
-    branches: [ main ]
-
+    branches: [ main, master ]
 jobs:
-  build:
-
+  test:
+    timeout-minutes: 60
     runs-on: ubuntu-latest
-
+    env:
+      E2E_FOLDER: "tests"
     steps:
-    - uses: actions/checkout@v2
-    - name: Use Node.js
-      uses: actions/setup-node@v2
+    - uses: actions/checkout@v4
+    - uses: actions/setup-node@v4
       with:
-        node-version: '14'
-        cache: 'npm'
-    - run: npm ci
-    - run: npx playwright install
-    - run: npm test
+        node-version: 20
+    - name: Install dependencies
+      run: npm ci --force
+    - name: Install Playwright Browsers
+      run: npx playwright install --with-deps --force
+    - name: Run Playwright tests
+      run: npx playwright test ${{ env.E2E_FOLDER }}
   
     - uses: actions/upload-artifact@master
       with:
