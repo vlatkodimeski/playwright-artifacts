@@ -18,8 +18,16 @@ jobs:
         run: npx playwright install --with-deps --force
       - name: Run Playwright tests
         run: npx playwright test ${{ env.E2E_FOLDER }}
+      
+      # List all directories in the current working directory
+      - name: List All Directories
+        run: ls -d */
+
+      # List contents of allure-results directory
       - name: List Allure Results
         run: ls -l allure-results
+
+      # Upload Allure Results
       - name: Upload Allure Results
         uses: actions/upload-artifact@v4
         with:
