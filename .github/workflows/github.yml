@@ -30,7 +30,7 @@ jobs:
         run: mkdir -p playwright-report
 
       - name: Upload Playwright Report
-        if: always() && exists('playwright-report/')
+        if: always()
         uses: actions/upload-artifact@v4
         with:
           name: playwright-report
