@@ -16,12 +16,14 @@ export default defineConfig({
     retries: process.env.CI ? 2 : 1,
     workers: process.env.CI ? 2 : 1,
     reporter: [
-     ['html', { open: 'never' }],
-     ['junit', { outputFile: 'reports/junit.xml' }]],
+      ['html', { open: 'never' }],
+      ['junit', { outputFile: `./reports/junit.xml` }],
+      ['allure-playwright']
+  ],
     use: {
         actionTimeout: 30000,
         trace: "retain-on-failure",
-        headless: process.env.CI ? true : false,
+        headless: process.env.CI ? true : true,
         screenshot: { mode: 'only-on-failure', fullPage: true },
         // geolocation: { longitude: 14.3754, latitude: 35.9375 }, // Coordinates for Malta
         // locale: 'en-MT', // Locale for Malta
