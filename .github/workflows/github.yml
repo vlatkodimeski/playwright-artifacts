@@ -26,9 +26,6 @@ jobs:
       - name: Run Playwright tests
         run: npx playwright test ${{ env.E2E_FOLDER }} --reporter=line,allure-playwright --output=playwright-report
 
-      - name: Create Playwright Report Directory
-        run: mkdir -p playwright-report
-
       - name: Upload Playwright Report
         if: always()
         uses: actions/upload-artifact@v4
