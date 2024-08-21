@@ -1,4 +1,5 @@
 name: Playwright run tests with Allure report
+
 on:
   push:
     branches: [ main, master ]
@@ -23,10 +24,13 @@ jobs:
         run: npx playwright install --with-deps --force
 
       - name: Run Playwright tests
-        run: npx playwright test ${{ env.E2E_FOLDER }} --reporter=line,allure-playwright
+        run: npx playwright test ${{ env.E2E_FOLDER }} --reporter=line,allure-playwright --output=playwright-report
+
+      - name: Create Playwright Report Directory
+        run: mkdir -p playwright-report
 
       - name: Upload Playwright Report
-        if: ${{ failure() }}
+        if: always() && exists('playwright-report/')
         uses: actions/upload-artifact@v4
         with:
           name: playwright-report
@@ -67,5 +71,9 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: allure-report
 
+      # Optional: Display the Allure Report URL
       # - name: Display Allure Report URL
-        # run: echo "Allure report available at: https://<username>.github.io/<repository-name>/"
+      #   run: echo "Allure report available at: https://<username>.github.io/<repository-name>/"
+
+      - name: List Workspace Files
+        run: ls -R

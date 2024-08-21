@@ -1,8 +1,9 @@
-.idea/
 .env
-playwright-report
-test-results
-node_modules
 vscode
-reports
-allure-results
+/node_modules/
+/test-results/
+/playwright-report/
+/reports/
+/allure-results
+/allure-reports
+/.idea
