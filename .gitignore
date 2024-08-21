@@ -5,3 +5,4 @@ test-results
 node_modules
 vscode
 reports
+allure-results
