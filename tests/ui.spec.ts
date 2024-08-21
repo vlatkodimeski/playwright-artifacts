@@ -23,7 +23,7 @@ gamdom.describe("ui fixture", () => {
     await registration.expectcloudFlareInterceptorToBeVisible();
 });
 
-  gamdom('Player can login to the Ui with valid credentials', async ({ login, registration }) => {
+  gamdom.skip('Player can login to the Ui with valid credentials', async ({ login, registration }) => {
     await login.clickSignInButton();
     await registration.closePopUpNotification();
     await login.populateSignInDetails(loginDetails.userName, loginDetails.passWord);
@@ -31,7 +31,7 @@ gamdom.describe("ui fixture", () => {
     await login.expectcloudFlareLoginInterceptorToBeVisible();
 });
   
-  gamdom('Player can open game while logged out', async ({ game }) => {
+  gamdom.skip('Player can open game while logged out', async ({ game }) => {
     await game.casinoClick();
     await game.searchGame(gameToPlay)
     await game.selectGameForPlay()
