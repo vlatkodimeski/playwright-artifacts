@@ -62,7 +62,7 @@ jobs:
           allure_history: allure-history
 
       - name: Deploy report to GitHub Pages
-        if: success()
+        if: always()
         uses: peaceiris/actions-gh-pages@v4
         with:
           PERSONAL_TOKEN: ${{ secrets.TOKEN }}
