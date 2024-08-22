@@ -1,0 +1,9 @@
+[ {
+  "buildOrder" : 39,
+  "reportUrl" : "https://vlatkodimeski.github.io/playwright-artifacts/39",
+  "reportName" : "Allure Report with history",
+  "data" : {
+    "run" : 4,
+    "retry" : 0
+  }
+} ]

@@ -1,0 +1,57 @@
+{
+  "uid" : "b1a8273437954620fa374b796ffaacdd",
+  "children" : [ {
+    "name" : "Post issue; @post @api",
+    "uid" : "a9ca2bbab1a0826b",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "skipped",
+    "time" : {
+      "start" : 1724336153860,
+      "stop" : 1724336153862,
+      "duration" : 2
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ "chromeMobile" ]
+  }, {
+    "name" : "Edit issue; @edit @api",
+    "uid" : "2bd7983758c68cac",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "skipped",
+    "time" : {
+      "start" : 1724336153862,
+      "stop" : 1724336153863,
+      "duration" : 1
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ "chromeMobile" ]
+  }, {
+    "name" : "Delete issue; @delete @api",
+    "uid" : "272893ae4e20266f",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "skipped",
+    "time" : {
+      "start" : 1724336153863,
+      "stop" : 1724336153863,
+      "duration" : 0
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ "chromeMobile" ]
+  }, {
+    "name" : "Get issue by id; @get @api",
+    "uid" : "b61d175630dfb527",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1724336155117,
+      "stop" : 1724336156676,
+      "duration" : 1559
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ "chromeMobile" ]
+  } ],
+  "name" : "behaviors"
+}

@@ -1,0 +1,82 @@
+{
+  "b5c76b3b599581625c92c10a5c6864ce:f2a6efd41aa80bbbcbde534afafb4c49" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "b61d175630dfb527",
+      "reportUrl" : "https://vlatkodimeski.github.io/playwright-artifacts/39/#testresult/b61d175630dfb527",
+      "status" : "passed",
+      "time" : {
+        "start" : 1724336155117,
+        "stop" : 1724336156676,
+        "duration" : 1559
+      }
+    } ]
+  },
+  "e240949db5cfda6b5e21685d1533281c:f2a6efd41aa80bbbcbde534afafb4c49" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 1,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "2bd7983758c68cac",
+      "reportUrl" : "https://vlatkodimeski.github.io/playwright-artifacts/39/#testresult/2bd7983758c68cac",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1724336153862,
+        "stop" : 1724336153863,
+        "duration" : 1
+      }
+    } ]
+  },
+  "97799542d308691cd59693c2cc4f9101:f2a6efd41aa80bbbcbde534afafb4c49" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 1,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "a9ca2bbab1a0826b",
+      "reportUrl" : "https://vlatkodimeski.github.io/playwright-artifacts/39/#testresult/a9ca2bbab1a0826b",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1724336153860,
+        "stop" : 1724336153862,
+        "duration" : 2
+      }
+    } ]
+  },
+  "ed6da40c98c2f2dcdd156699f7001d4e:f2a6efd41aa80bbbcbde534afafb4c49" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 1,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "272893ae4e20266f",
+      "reportUrl" : "https://vlatkodimeski.github.io/playwright-artifacts/39/#testresult/272893ae4e20266f",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1724336153863,
+        "stop" : 1724336153863,
+        "duration" : 0
+      }
+    } ]
+  }
+}
