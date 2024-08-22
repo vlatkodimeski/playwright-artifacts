@@ -1,5 +1,0 @@
-"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
-"skipped","Thu Aug 22 14:31:56 GMT 2024","Thu Aug 22 14:31:56 GMT 2024","0","chromeMobile","api.spec.ts","api fixture","","","Delete issue; @delete @api",""
-"skipped","Thu Aug 22 14:31:56 GMT 2024","Thu Aug 22 14:31:56 GMT 2024","1","chromeMobile","api.spec.ts","api fixture","","","Post issue; @post @api",""
-"skipped","Thu Aug 22 14:31:56 GMT 2024","Thu Aug 22 14:31:56 GMT 2024","1","chromeMobile","api.spec.ts","api fixture","","","Edit issue; @edit @api",""
-"passed","Thu Aug 22 14:31:58 GMT 2024","Thu Aug 22 14:31:59 GMT 2024","1460","chromeMobile","api.spec.ts","api fixture","","","Get issue by id; @get @api",""
