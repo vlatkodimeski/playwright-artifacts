@@ -16,6 +16,9 @@ jobs:
         run: npx playwright install --with-deps
       - name: Run Playwright tests
         run: npx playwright test
+      
+      - name: List Workspace Files
+        run: ls -R
 
         if: always()
       - name: Upload reports
@@ -56,5 +59,3 @@ jobs:
           PUBLISH_BRANCH: gh-pages
           PUBLISH_DIR: allure-history
       
-      - name: Where to find token
-        run: echo "https://github.com/settings/tokens ->"
