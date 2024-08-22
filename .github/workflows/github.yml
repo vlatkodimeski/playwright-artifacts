@@ -40,7 +40,6 @@ jobs:
         if: always()
       - name: Upload Allure Results
         uses: actions/upload-artifact@v4
-        continue-on-error: true
         with:
           name: allure-results
           path: allure-results/  
