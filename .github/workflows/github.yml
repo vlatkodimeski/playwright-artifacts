@@ -55,3 +55,6 @@ jobs:
           PERSONAL_TOKEN: ${{ secrets.TOKEN }}
           PUBLISH_BRANCH: gh-pages
           PUBLISH_DIR: allure-history
+      
+      - name: Where to find token
+        run: echo "https://github.com/settings/tokens -> generate new token classic -> select all and copy"
