@@ -1,5 +1,4 @@
 name: Playwright Tests
-
 on:
   push:
     branches: [main]
@@ -24,22 +23,22 @@ jobs:
       
       - name: List Workspace Files
         run: ls -R
+        
         if: always()
-
       - name: Upload reports
         uses: actions/upload-artifact@v4
-        if: always()
         with:
           name: reports
           path: reports/
-
+        
+        if: always()
       - name: Upload allure
         uses: actions/upload-artifact@v4
-        if: always()
         with:
           name: allure-results
           path: allure-results/  
-      
+        
+        if: always()
       - name: Upload playwright report
         uses: actions/upload-artifact@v4
         with:
@@ -61,10 +60,9 @@ jobs:
           gh_pages: gh-pages
           allure_report: allure-report
           allure_history: allure-history
-
+      
   deploy:
     runs-on: ubuntu-latest
-
     permissions:
       contents: write
       pull-requests: write
