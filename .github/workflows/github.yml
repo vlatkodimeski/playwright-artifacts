@@ -61,3 +61,7 @@ jobs:
           PERSONAL_TOKEN: ${{ secrets.TOKEN }}
           PUBLISH_BRANCH: gh-pages
           PUBLISH_DIR: allure-history
+
+# 1 add token -> https://github.com/settings/tokens -> generate new token classic -> select all and copy"
+# 2 use that token -> https://github.com/vlatkodimeski/playwright-artifacts/settings/secrets/actions
+# 3 add permission read/write to: 
