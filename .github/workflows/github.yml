@@ -6,7 +6,7 @@ jobs:
   test:
     runs-on: ubuntu-latest
     permissions:
-      contents: read
+      contents: write
       pages: write          # <-- Add permissions at the job level
     steps:
       - uses: actions/checkout@v4
