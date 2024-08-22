@@ -43,9 +43,7 @@ jobs:
         continue-on-error: true
         with:
           name: allure-results
-          path: allure-results/ 
-          if-no-files-found: error
-          retention-days: 10 
+          path: allure-results/  
 
       - name: Get Allure history
         uses: actions/checkout@v4
