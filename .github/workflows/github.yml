@@ -17,6 +17,13 @@ jobs:
       - name: Run Playwright tests
         run: npx playwright test
 
+        if: always()
+      - name: Upload Allure Results
+        uses: actions/upload-artifact@v4
+        with:
+          name: reports
+          path: reports/
+
       - name: Get Allure history
         uses: actions/checkout@v4
         continue-on-error: true
