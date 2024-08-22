@@ -10,7 +10,7 @@ gamdom.describe("ui fixture", () => {
     permissions: ['geolocation'],
   });
   gamdom.beforeEach(async ({ registration, context }) => {
-    //await context.setGeolocation({ longitude: 14.3754, latitude: 35.9375 });
+    await context.setGeolocation({ longitude: 14.3754, latitude: 35.9375 });
     await registration.navigateToWebUi(baseUrl.Ui);
   });
 
