@@ -7,49 +7,41 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-
       - uses: actions/setup-node@v4
         with:
           node-version: 20
-
       - name: Install dependencies
         run: npm ci
-
       - name: Install Playwright Browsers
         run: npx playwright install --with-deps
-
       - name: Run Playwright tests
         run: npx playwright test
       
       - name: List Workspace Files
         run: ls -R
-        if: always()
 
+        if: always()
       - name: Upload reports
         uses: actions/upload-artifact@v4
         with:
           name: reports
           path: reports/
+        
         if: always()
-
-      - name: Upload Playwright report
+      - name: Upload playwright report
         uses: actions/upload-artifact@v4
         with:
           name: playwright-report
           path: playwright-report/
 
+
+          
       - name: Get Allure history
         uses: actions/checkout@v4
         continue-on-error: true
         with:
           ref: gh-pages
           path: gh-pages
-
-      - name: Create gh-pages branch if it doesn't exist
-        run: |
-          git checkout --orphan gh-pages || git checkout gh-pages
-          git commit --allow-empty -m "Initialize gh-pages branch" || true
-          git push origin gh-pages || true
 
       - name: Allure Report action from marketplace
         uses: simple-elf/allure-report-action@v1
@@ -60,10 +52,10 @@ jobs:
           allure_report: allure-report
           allure_history: allure-history
 
-      - name: Deploy report to GitHub Pages
-        if: success()
+      - name: Deploy report to Github Pages
         uses: peaceiris/actions-gh-pages@v4
         with:
           PERSONAL_TOKEN: ${{ secrets.TOKEN }}
           PUBLISH_BRANCH: gh-pages
           PUBLISH_DIR: allure-history
+      
