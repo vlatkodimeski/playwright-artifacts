@@ -25,10 +25,10 @@ export default defineConfig({
         trace: "retain-on-failure",
         headless: process.env.CI ? true : true,
         screenshot: { mode: 'only-on-failure', fullPage: true },
-        // geolocation: { longitude: 14.3754, latitude: 35.9375 }, // Coordinates for Malta
+        geolocation: { longitude: 14.3754, latitude: 35.9375 }, // Coordinates for Malta
         // locale: 'en-MT', // Locale for Malta
         // timezoneId: 'Europe/Malta', // Timezone for Malta
-        // permissions: ['geolocation'], // Allow geolocation permissions
+        permissions: ['geolocation'], // Allow geolocation permissions
         contextOptions: {
           geolocation: { longitude: 14.3754, latitude: 35.9375 },
           permissions: ['geolocation'],

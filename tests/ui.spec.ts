@@ -5,16 +5,17 @@ import { baseUrl, loginDetails } from "../defaults/config.enums";
 gamdom.describe("ui fixture", () => {
   let gameToPlay: string = 'Coins Of Alkemor';
   
-  // gamdom.use({
-  //   geolocation: { longitude: 14.3754, latitude: 35.9375 },
-  //   permissions: ['geolocation'],
-  // });
+  gamdom.use({
+    geolocation: { longitude: 14.3754, latitude: 35.9375 },
+    permissions: ['geolocation'],
+  });
   gamdom.beforeEach(async ({ registration, context }) => {
     //await context.setGeolocation({ longitude: 14.3754, latitude: 35.9375 });
     await registration.navigateToWebUi(baseUrl.Ui);
   });
 
-  gamdom('Player can register', async ({ registration }) => {
+  gamdom('Player can register', async ({ context, registration }) => {
+    await context.setGeolocation({ longitude: 14.3754, latitude: 35.9375 });
     await registration.registerButtonClick();
     await registration.closePopUpNotification();
     await registration.populatePlayerDetails();
