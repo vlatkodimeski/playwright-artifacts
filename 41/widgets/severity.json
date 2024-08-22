@@ -1,0 +1,41 @@
+[ {
+  "uid" : "e5e2207f58e9a9e3",
+  "name" : "Post issue; @post @api",
+  "time" : {
+    "start" : 1724336910168,
+    "stop" : 1724336910170,
+    "duration" : 2
+  },
+  "status" : "skipped",
+  "severity" : "normal"
+}, {
+  "uid" : "60aed31b40e6caae",
+  "name" : "Edit issue; @edit @api",
+  "time" : {
+    "start" : 1724336910170,
+    "stop" : 1724336910170,
+    "duration" : 0
+  },
+  "status" : "skipped",
+  "severity" : "normal"
+}, {
+  "uid" : "2d53aa15c2d77725",
+  "name" : "Get issue by id; @get @api",
+  "time" : {
+    "start" : 1724336911463,
+    "stop" : 1724336912848,
+    "duration" : 1385
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "ba4be2f3cace61bb",
+  "name" : "Delete issue; @delete @api",
+  "time" : {
+    "start" : 1724336910171,
+    "stop" : 1724336910171,
+    "duration" : 0
+  },
+  "status" : "skipped",
+  "severity" : "normal"
+} ]

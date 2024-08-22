@@ -1,0 +1,91 @@
+{
+  "uid" : "60aed31b40e6caae",
+  "name" : "Edit issue; @edit @api",
+  "fullName" : "api.spec.ts:32:10",
+  "historyId" : "e240949db5cfda6b5e21685d1533281c:f2a6efd41aa80bbbcbde534afafb4c49",
+  "time" : {
+    "start" : 1724336910170,
+    "stop" : 1724336910170,
+    "duration" : 0
+  },
+  "status" : "skipped",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "language",
+    "value" : "JavaScript"
+  }, {
+    "name" : "framework",
+    "value" : "Playwright"
+  }, {
+    "name" : "titlePath",
+    "value" : " > chromeMobile > api.spec.ts > api fixture"
+  }, {
+    "name" : "package",
+    "value" : "api.spec.ts"
+  }, {
+    "name" : "host",
+    "value" : "fv-az770-191"
+  }, {
+    "name" : "thread",
+    "value" : "fv-az770-191-4684-playwright-worker--1"
+  }, {
+    "name" : "parentSuite",
+    "value" : "chromeMobile"
+  }, {
+    "name" : "suite",
+    "value" : "api.spec.ts"
+  }, {
+    "name" : "subSuite",
+    "value" : "api fixture"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "Project",
+    "value" : "chromeMobile"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 3,
+        "passed" : 0,
+        "unknown" : 0,
+        "total" : 3
+      },
+      "items" : [ {
+        "uid" : "1a98475a13bd7daa",
+        "reportUrl" : "https://vlatkodimeski.github.io/playwright-artifacts/40/#testresult/1a98475a13bd7daa",
+        "status" : "skipped",
+        "time" : {
+          "start" : 1724336577986,
+          "stop" : 1724336577986,
+          "duration" : 0
+        }
+      }, {
+        "uid" : "2bd7983758c68cac",
+        "reportUrl" : "https://vlatkodimeski.github.io/playwright-artifacts/39/#testresult/2bd7983758c68cac",
+        "status" : "skipped",
+        "time" : {
+          "start" : 1724336153862,
+          "stop" : 1724336153863,
+          "duration" : 1
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "60aed31b40e6caae.json",
+  "parameterValues" : [ "chromeMobile" ]
+}
