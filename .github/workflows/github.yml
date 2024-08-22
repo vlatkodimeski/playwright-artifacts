@@ -5,6 +5,9 @@ on:
 jobs:
   test:
     runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      pages: write          # <-- Add permissions at the job level
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
@@ -16,33 +19,26 @@ jobs:
         run: npx playwright install --with-deps
       - name: Run Playwright tests
         run: npx playwright test
-      
       - name: List Workspace Files
         run: ls -R
-
         if: always()
       - name: Upload reports
         uses: actions/upload-artifact@v4
         with:
           name: reports
           path: reports/
-        
         if: always()
       - name: Upload playwright report
         uses: actions/upload-artifact@v4
         with:
           name: playwright-report
           path: playwright-report/
-
-
-          
       - name: Get Allure history
         uses: actions/checkout@v4
         continue-on-error: true
         with:
           ref: gh-pages
           path: gh-pages
-
       - name: Allure Report action from marketplace
         uses: simple-elf/allure-report-action@v1
         id: allure-report
@@ -51,11 +47,9 @@ jobs:
           gh_pages: gh-pages
           allure_report: allure-report
           allure_history: allure-history
-
       - name: Deploy report to Github Pages
         uses: peaceiris/actions-gh-pages@v4
         with:
           PERSONAL_TOKEN: ${{ secrets.TOKEN }}
           PUBLISH_BRANCH: gh-pages
           PUBLISH_DIR: allure-history
-      
