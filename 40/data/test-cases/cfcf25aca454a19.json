@@ -1,0 +1,82 @@
+{
+  "uid" : "cfcf25aca454a19",
+  "name" : "Delete issue; @delete @api",
+  "fullName" : "api.spec.ts:44:10",
+  "historyId" : "ed6da40c98c2f2dcdd156699f7001d4e:f2a6efd41aa80bbbcbde534afafb4c49",
+  "time" : {
+    "start" : 1724336577986,
+    "stop" : 1724336577987,
+    "duration" : 1
+  },
+  "status" : "skipped",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "language",
+    "value" : "JavaScript"
+  }, {
+    "name" : "framework",
+    "value" : "Playwright"
+  }, {
+    "name" : "titlePath",
+    "value" : " > chromeMobile > api.spec.ts > api fixture"
+  }, {
+    "name" : "package",
+    "value" : "api.spec.ts"
+  }, {
+    "name" : "host",
+    "value" : "fv-az1382-880"
+  }, {
+    "name" : "thread",
+    "value" : "fv-az1382-880-4653-playwright-worker--1"
+  }, {
+    "name" : "parentSuite",
+    "value" : "chromeMobile"
+  }, {
+    "name" : "suite",
+    "value" : "api.spec.ts"
+  }, {
+    "name" : "subSuite",
+    "value" : "api fixture"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "Project",
+    "value" : "chromeMobile"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 2,
+        "passed" : 0,
+        "unknown" : 0,
+        "total" : 2
+      },
+      "items" : [ {
+        "uid" : "272893ae4e20266f",
+        "reportUrl" : "https://vlatkodimeski.github.io/playwright-artifacts/39/#testresult/272893ae4e20266f",
+        "status" : "skipped",
+        "time" : {
+          "start" : 1724336153863,
+          "stop" : 1724336153863,
+          "duration" : 0
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "cfcf25aca454a19.json",
+  "parameterValues" : [ "chromeMobile" ]
+}

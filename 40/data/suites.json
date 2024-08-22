@@ -1,0 +1,69 @@
+{
+  "uid" : "98d3104e051c652961429bf95fa0b5d6",
+  "children" : [ {
+    "name" : "chromeMobile",
+    "children" : [ {
+      "name" : "api.spec.ts",
+      "children" : [ {
+        "name" : "api fixture",
+        "children" : [ {
+          "name" : "Post issue; @post @api",
+          "uid" : "2adffff501e55f6a",
+          "parentUid" : "1df3843b141ff71140fc76b8c07843eb",
+          "status" : "skipped",
+          "time" : {
+            "start" : 1724336577984,
+            "stop" : 1724336577985,
+            "duration" : 1
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "chromeMobile" ]
+        }, {
+          "name" : "Delete issue; @delete @api",
+          "uid" : "cfcf25aca454a19",
+          "parentUid" : "1df3843b141ff71140fc76b8c07843eb",
+          "status" : "skipped",
+          "time" : {
+            "start" : 1724336577986,
+            "stop" : 1724336577987,
+            "duration" : 1
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "chromeMobile" ]
+        }, {
+          "name" : "Edit issue; @edit @api",
+          "uid" : "1a98475a13bd7daa",
+          "parentUid" : "1df3843b141ff71140fc76b8c07843eb",
+          "status" : "skipped",
+          "time" : {
+            "start" : 1724336577986,
+            "stop" : 1724336577986,
+            "duration" : 0
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "chromeMobile" ]
+        }, {
+          "name" : "Get issue by id; @get @api",
+          "uid" : "60ba298e129a47b6",
+          "parentUid" : "1df3843b141ff71140fc76b8c07843eb",
+          "status" : "passed",
+          "time" : {
+            "start" : 1724336579266,
+            "stop" : 1724336580598,
+            "duration" : 1332
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "chromeMobile" ]
+        } ],
+        "uid" : "1df3843b141ff71140fc76b8c07843eb"
+      } ],
+      "uid" : "75e6ed70d26d2af04ca14c1e1a26819d"
+    } ],
+    "uid" : "b2e9d38dababdafcad2dc942aefd50e8"
+  } ],
+  "name" : "suites"
+}

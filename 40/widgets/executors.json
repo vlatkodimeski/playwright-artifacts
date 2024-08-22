@@ -1,0 +1,10 @@
+[ {
+  "name" : "GitHub Actions",
+  "type" : "github",
+  "url" : "https://vlatkodimeski.github.io/playwright-artifacts",
+  "buildOrder" : 40,
+  "buildName" : "GitHub Actions Run #10509966926",
+  "buildUrl" : "https://github.com/vlatkodimeski/playwright-artifacts/actions/runs/10509966926",
+  "reportName" : "Allure Report with history",
+  "reportUrl" : "https://vlatkodimeski.github.io/playwright-artifacts/40"
+} ]
