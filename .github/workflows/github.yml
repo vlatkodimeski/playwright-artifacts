@@ -37,6 +37,13 @@ jobs:
         with:
           name: playwright-report
           path: playwright-report/
+        
+        if: always()
+      - name: Upload Allure Results
+        uses: actions/upload-artifact@v4
+        with:
+          name: allure-results
+          path: allure-results/  
 
       - name: Get Allure history
         uses: actions/checkout@v4
@@ -64,4 +71,8 @@ jobs:
 
 # 1 add token -> https://github.com/settings/tokens -> generate new token classic -> select all and copy"
 # 2 use that token -> https://github.com/vlatkodimeski/playwright-artifacts/settings/secrets/actions
-# 3 add permission read/write to: 
+# 3 add permission read/write to: workflow permissions -> https://github.com/vlatkodimeski/playwright-artifacts/settings/actions -> mark as read/write
+# bash
+# git checkout --orphan gh-pages
+# git commit --allow-empty -m "Initialize gh-pages"
+# git push origin gh-pages
