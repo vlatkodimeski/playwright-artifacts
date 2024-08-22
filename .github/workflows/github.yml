@@ -57,4 +57,4 @@ jobs:
           PUBLISH_DIR: allure-history
       
       - name: Where to find token
-        run: echo "https://github.com/settings/tokens -> "
+        run: echo "https://github.com/settings/tokens ->"
