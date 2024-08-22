@@ -7,7 +7,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-
       - uses: actions/setup-node@v4
         with:
           node-version: 20
@@ -41,6 +40,7 @@ jobs:
         if: always()
       - name: Upload Allure Results
         uses: actions/upload-artifact@v4
+        continue-on-error: true
         with:
           name: allure-results
           path: allure-results/  
