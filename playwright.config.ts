@@ -18,7 +18,8 @@ export default defineConfig({
     reporter: [
       ['html', { open: 'never' }],
       ['junit', { outputFile: `./reports/junit.xml` }],
-      ['allure-playwright']
+      ['allure-playwright'],
+      //['./custom-reporter11-append.ts'],
   ],
     use: {
         actionTimeout: 30000,
@@ -43,6 +44,7 @@ export default defineConfig({
         trace: 'retain-on-failure',
         ...devices['Pixel 5'],
         browserName: 'chromium',
+        baseURL: "https://play.verajohn123.com",
         launchOptions: {
           slowMo: 200
         }

@@ -24,7 +24,7 @@ gamdom.describe("ui fixture", () => {
     await registration.expectcloudFlareInterceptorToBeVisible();
 });
 
-  gamdom.skip('Player can login to the Ui with valid credentials', async ({ login, registration }) => {
+  gamdom('Player can login to the Ui with valid credentials', async ({ login, registration }) => {
     await login.clickSignInButton();
     await registration.closePopUpNotification();
     await login.populateSignInDetails(loginDetails.userName, loginDetails.passWord);

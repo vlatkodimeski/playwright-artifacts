@@ -39,7 +39,7 @@ jobs:
         
         if: always()
       - name: Upload Allure Results
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v3
         with:
           name: allure-results
           path: allure-results/  
